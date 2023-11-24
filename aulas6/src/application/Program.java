@@ -11,10 +11,12 @@ import entities.Employee;
 
 public class Program {
 	public static void main(String[] args) {
-		List<String> list = new ArrayList<>();
-		//List<Employee> list = new ArrayList<>();
+		//List<String> list = new ArrayList<>();
+		List<Employee> list = new ArrayList<>();
 		String path = "C:\\temp\\in.txt";
-		String name = "C:\\temp\\in.txt";
+		//String name = "C:\\temp\\in.txt";
+		
+		/*
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			while (name != null) {
 				list.add(name);
@@ -27,9 +29,9 @@ public class Program {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		*/
 		
 		
-		/*
 		try (BufferedReader br = new BufferedReader(new FileReader(path))) {
 			String employeeCsv = br.readLine();
 			while (employeeCsv != null) {
@@ -44,6 +46,5 @@ public class Program {
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage());
 		}
-		*/
 	}
 }
